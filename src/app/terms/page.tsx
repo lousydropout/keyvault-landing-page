@@ -1,7 +1,7 @@
 export default function Terms() {
   return (
     <>
-      <main className="flex flex-col my-12 gap-8">
+      <main className="flex flex-col pt-12 pb-48 gap-8">
         <h1 className="text-6xl mb-12 text-primary">Terms and Conditions</h1>
         <p>
           <strong>Last Updated: 2024-02-18</strong>

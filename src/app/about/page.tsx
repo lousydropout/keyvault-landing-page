@@ -1,78 +1,71 @@
 import { Keyvault } from "@/components/keyvault";
+import Link from "next/link";
 
 export default function About() {
   return (
     <>
-      <main className="flex flex-col my-12 gap-8">
+      <main className="flex flex-col pt-12 pb-48 gap-8">
         <h1 className="text-6xl mb-12 text-primary">About</h1>
-        <h2 className="text-4xl mb-4">Introduction</h2>
+
+        <h2 className="text-4xl mt-8 mb-4">About the project</h2>
 
         <p className="text-2xl leading-relaxed">
-          To log into most sites on the internet, you either create a new
-          account with username and password or utilize social login.
+          <Keyvault /> is a blockchain-based password manager (for more details,
+          see{" "}
+          <Link href="/docs" className="text-accent italic underline">
+            Documentation
+          </Link>
+          ) and is motivated by the need for a secure and decentralized password
+          password manager not beholden to any single entity whether it be some
+          website administrator or some social login identity provider.
         </p>
 
         <p className="text-2xl leading-relaxed">
-          In the former case, you rely on the site to keep your username and
-          password safe. Prior to password managers being mainstream, users
-          would end up resuing the same password across multiple sites to avoid
-          having to remember multiple passwords. With your typical password
-          managers, users no longer have to memorize multiple passwords, but are
-          now dependent on the password managers to keep their passwords safe
-          and provide continued access. In contrast, your continued access to
-          encrypted passwords on <Keyvault /> cannot prevented by us or anyone
-          else so long as <span className="text-primary">Astar network</span>
-          {" (the network we deployed the smart contract on) "}
-          remains operational.
+          An early version of this project was submitted to the Polkadot ink!
+          Hackathon in Oct/Nov 2023.
         </p>
 
         <p className="text-2xl leading-relaxed">
-          In the later case, you rely on the social login of choice (whether it
-          be Google, Facebook, Github, or any other) to provide continued access
-          and hope that they do not revoke your access one day because they've
-          decided you've somehow violated their terms and conditions.
-        </p>
-
-        <p className="text-2xl leading-relaxed">
-          <Keyvault /> is a blockchain-based password manager. Here, your
-          passwords are encrypted and decrypted off-chain, on the frontend,
-          using your encryption key. As the default encryption scheme is a
-          256-bit AES-GCM, your passwords are encrypted using a
-          quantum-resistant and military-grade encryption scheme (read
-          explanation below).
-        </p>
-
-        <p className="text-2xl leading-relaxed">
-          For a hacker to crack a 256-bit encryption, the hacker would have to
-          guess around `2^255` keys on average before succeeding. To get a sense
-          of how large a number `2^255` is, I recommend watching{" "}
+          Tina Bregović has provided an insightful write-up of the event, which
+          is available on Medium under the title{" "}
           <a
-            className="text-accent underline"
-            href="https://www.youtube.com/watch?v=S9JGmA5_unY"
+            className="text-accent italic underline"
+            href="https://www.blog.encode.club/polkadot-ink-hackathon-powered-by-encode-club-prizewinners-and-summary-0ee9efac42ea#a067"
           >
-            3Blue1Brown's YouTube video
+            Polkadot ink! Hackathon powered by Encode Club—Prizewinners and
+            Summary
           </a>
           .
         </p>
 
         <p className="text-2xl leading-relaxed">
-          For symmetric encryptions such as AES, the quantum algorithm to keep
-          in mind is Grover's algorithm. In the case of 256-bit AES, Grover's
-          algorithm effectively reduces the 256 bits of entropy to 128 bits,
-          which is still such a ridiculously large number that the U.S. military
-          uses it for encrypting secret information (that fun tidbit was taken
-          from{" "}
-          <a
-            className="underline text-accent"
-            href="https://nordpass.com/blog/military-grade-encryption-explained/"
-          >
-            Military-grade encryption explained
-          </a>
-          ).
+          Further, while the project did not place in the Astar Bounty track,
+          which offered winners "exclusive access to a mentor programme with
+          Astar," I received invaluable encouragement from Astar's Sofiya
+          Vasylyeva. Her words of encouragement and periodic check-ins on my
+          progress have significantly contributed to the continued development
+          of this project. Without her support, the journey to this point would
+          have been much longer and more challenging.
         </p>
 
-        <p className="text-2xl leading-relaxed text-accent">
+        <p className="text-2xl leading-relaxed text-accent mt-8 mb-48">
           More details coming soon...
+        </p>
+
+        <h2 className="text-4xl mt-8 mb-4">About the team</h2>
+
+        <p className="text-2xl leading-relaxed">
+          Thus far, this project has been a solo endeavor by me, Vincent Chan,
+          who often goes by the handle lousydropout. I am a cloud developer who
+          has caught the blockchain bug, graduated{" "}
+          <a
+            className="text-accent italic underline"
+            target="_blank"
+            href="https://kodadot.xyz/ahp/gallery/56-6"
+          >
+            Polkadot Blockchain Academy at Berkeley
+          </a>
+          , and has been exploring the possibilities of blockchain.
         </p>
       </main>
     </>

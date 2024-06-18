@@ -1,7 +1,7 @@
 export default function Pricing() {
   return (
     <>
-      <main className="flex flex-col my-12 gap-8">
+      <main className="flex flex-col pt-12 pb-48 gap-8">
         <h1 className="text-6xl text-primary">Pricing</h1>
         <p className="text-2xl leading-relaxed">
           Currently, at least while in beta testing, keyvault is free if

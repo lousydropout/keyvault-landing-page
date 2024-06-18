@@ -40,12 +40,13 @@ export default function About() {
 
         <p className="text-2xl leading-relaxed">
           Further, while the project did not place in the Astar Bounty track,
-          which offered winners "exclusive access to a mentor programme with
-          Astar," I received invaluable encouragement from Astar's Sofiya
-          Vasylyeva. Her words of encouragement and periodic check-ins on my
-          progress have significantly contributed to the continued development
-          of this project. Without her support, the journey to this point would
-          have been much longer and more challenging.
+          which offered winners &ldquo;exclusive access to a mentor programme
+          with Astar,&rdquo; I received invaluable encouragement from
+          Astar&apos;s Sofiya Vasylyeva. Her words of encouragement and periodic
+          check-ins on my progress have significantly contributed to the
+          continued development of this project. Without her support, the
+          journey to this point would have been much longer and more
+          challenging.
         </p>
 
         <p className="text-2xl leading-relaxed text-accent mt-8 mb-48">

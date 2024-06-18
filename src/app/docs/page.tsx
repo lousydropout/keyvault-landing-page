@@ -29,19 +29,25 @@ export default function Documentation() {
         </h2>
         <p className="text-2xl leading-relaxed">
           Thank you for checking out <Keyvault /> during its <Beta /> testing
-          period. We'd love to hear your experience and feedback.
+          period. We&apos;d love to hear your experience and feedback.
         </p>
         <p className="text-2xl leading-relaxed">
           The first step will be to install the keyvault Chrome extension. To do
           this, you can either download the zip file from the keyvault Github
-          repo (see _____________) or clone the repo and build the Chrome
-          extension files yourself.
+          repo (see{" "}
+          <a
+            href="https://github.com/lousydropout/password-manager-extension"
+            target="_blank"
+          >
+            keyvault Chrome Extension
+          </a>
+          ) or clone the repo and build the Chrome extension files yourself.
         </p>
         <p className="text-2xl leading-relaxed">
           <span className="italic">
             Note: Although more cumbersome, building the Chrome extension
             yourself allows you to go through the codebase and make sure the
-            Chrome extension you're about to install does not contain any
+            Chrome extension you&apos;re about to install does not contain any
             malicious code (in case our GitHub account gets hacked for
             instance).
           </span>
@@ -98,8 +104,9 @@ export default function Documentation() {
         <p className="text-2xl leading-relaxed">
           In the later case, you rely on the social login of choice (whether it
           be Google, Facebook, Github, or any other) to provide continued access
-          and hope that they do not revoke your access one day because they've
-          decided you've somehow violated their terms and conditions.
+          and hope that they do not revoke your access one day because
+          they&apos;ve decided you&apos;ve somehow violated their terms and
+          conditions.
         </p>
         <h3 className="text-3xl mt-8 mb-2 underline">
           What encryption scheme does keyvault use?
@@ -120,17 +127,17 @@ export default function Documentation() {
             className="text-accent underline"
             href="https://www.youtube.com/watch?v=S9JGmA5_unY"
           >
-            3Blue1Brown's YouTube video
+            3Blue1Brown&apos;s YouTube video
           </a>
           .
         </p>
         <p className="text-2xl leading-relaxed">
           For symmetric encryptions such as AES, the quantum algorithm to keep
-          in mind is Grover's algorithm. In the case of 256-bit AES, Grover's
-          algorithm effectively reduces the 256 bits of entropy to 128 bits,
-          which is still such a ridiculously large number that the U.S. military
-          uses it for encrypting secret information (that fun tidbit was taken
-          from{" "}
+          in mind is Grover&apos;s algorithm. In the case of 256-bit AES,
+          Grover&apos;s algorithm effectively reduces the 256 bits of entropy to
+          128 bits, which is still such a ridiculously large number that the
+          U.S. military uses it for encrypting secret information (that fun
+          tidbit was taken from{" "}
           <a
             className="underline text-accent"
             href="https://nordpass.com/blog/military-grade-encryption-explained/"

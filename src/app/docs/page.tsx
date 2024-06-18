@@ -55,21 +55,68 @@ export default function Documentation() {
         <h3 className="text-3xl mt-8 mb-2 underline">
           Installing using the prepared zip file
         </h3>
-        <p className="text-2xl leading-relaxed">
-          First, please download the <Keyvault /> <Beta /> release zip file
-          (this will contain the Chrome extension).
-        </p>
+        <ol>
+          <li className="text-2xl leading-relaxed">
+            First, please download the <Keyvault /> <Beta /> release zip file
+            found on the Github repo&apos;s release page:{" "}
+            <a
+              href="https://github.com/lousydropout/password-manager-extension/releases/tag/beta-1"
+              target="_blank"
+            >
+              keyvault Chrome extention release page
+            </a>
+            .
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Next, unzip the file into a location of your choice.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Open Chrome and navigate to the extensions page by typing
+            `chrome://extensions/` in the address bar.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Enable developer mode by clicking the toggle switch in the top right
+            corner.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Click the `Load unpacked` button and navigate to the unzipped
+            folder.
+          </li>
+        </ol>
         <h3 className="text-3xl mt-8 mb-2 underline">
           Cloning and building the Chrome extension yourself
         </h3>
-        <p className="text-2xl leading-relaxed">
-          <a
-            className="text-accent underline italic"
-            href="https://github.com/lousydropout/password-manager-extension"
-          >
-            Keyvault chrome extension repo
-          </a>
-        </p>
+        <ol>
+          <li className="text-2xl leading-relaxed">
+            Clone or download{" "}
+            <a
+              className="text-accent underline italic"
+              href="https://github.com/lousydropout/password-manager-extension"
+            >
+              Keyvault chrome extension repo
+            </a>
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Open the terminal and navigate to the root folder of the cloned repo
+            and run `pnpm install`.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Run `pnpm build` to build the extension files.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Open Chrome and navigate to the extensions page by typing
+            `chrome://extensions/` in the address bar.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Enable developer mode by clicking the toggle switch in the top right
+            corner.
+          </li>
+          <li className="text-2xl leading-relaxed">
+            Click the `Load unpacked` button and navigate to the `dist` folder
+            (this was created via `pnpm run build`) in the root directory of the
+            cloned repo.
+          </li>
+        </ol>
         <hr className="my-4 border-slate-600" />
         {/* Background information */}
         <h2

@@ -60,6 +60,7 @@ export default function Documentation() {
             First, please download the <Keyvault /> <Beta /> release zip file
             found on the Github repo&apos;s release page:{" "}
             <a
+              className="text-accent underline"
               href="https://github.com/lousydropout/password-manager-extension/releases/tag/beta-1"
               target="_blank"
             >

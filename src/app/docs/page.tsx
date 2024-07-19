@@ -55,7 +55,7 @@ export default function Documentation() {
         <h3 className="text-3xl mt-8 mb-2 underline">
           Installing using the prepared zip file
         </h3>
-        <ol>
+        <ol className="list-decimal">
           <li className="text-2xl leading-relaxed">
             First, please download the <Keyvault /> <Beta /> release zip file
             found on the Github repo&apos;s release page:{" "}

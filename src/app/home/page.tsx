@@ -6,7 +6,7 @@ import Shield from "@/components/icons/shield";
 export default function Home() {
   return (
     <>
-      <div className="sm:h-[300px] lg:h-[500px] pt-12 pb-48 sm:mt-32">
+      <div className="min-h-full pt-12 pb-48 sm:mt-32">
         <p className="text-3xl lg:text-6xl leading-normal lg:leading-normal text-center">
           The first and only{" "}
           <span className=" font-bold">&nbsp;blockchain-based</span>{" "}

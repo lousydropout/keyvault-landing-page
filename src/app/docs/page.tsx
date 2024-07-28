@@ -3,6 +3,21 @@ import { Keyvault } from "@/components/keyvault";
 
 export default function Documentation() {
   return (
+    <main className="flex flex-col pt-12 pb-48 gap-8">
+      <h1 className="text-6xl mb-12 text-primary">Documentation</h1>
+      <p className="text-2xl leading-relaxed">
+        Thank you for checking out <Keyvault /> during its <Beta /> testing
+        period. We are currently refactoring the dApp and expect to have it
+        available again within the week (ETA: by 2024/08/02).
+      </p>
+      <p className="text-2xl leading-relaxed">Thank you for your patience!</p>
+      <p className="text-2xl leading-relaxed text-accent mt-8">
+        More details coming soon...
+      </p>
+    </main>
+  );
+
+  return (
     <>
       <main className="flex flex-col pt-12 pb-48 gap-8">
         <h1 className="text-6xl mb-12 text-primary">Documentation</h1>

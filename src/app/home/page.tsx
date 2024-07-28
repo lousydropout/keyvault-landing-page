@@ -10,9 +10,22 @@ export default function Home() {
         <p className="text-3xl lg:text-6xl leading-normal lg:leading-normal text-center">
           The first and only{" "}
           <span className=" font-bold">&nbsp;blockchain-based</span>{" "}
-          <span className="text-primary">password&nbsp;manager</span> is now
+          <span className="text-primary">password&nbsp;manager</span>!
+          {/* is now
           available for <span className="text-accent italic">beta</span>{" "}
-          testing!
+          testing! */}
+        </p>
+        <p className="text-3xl lg:text-6xl leading-normal lg:leading-normal text-center italic">
+          Keyvault is currently being refactored and will be available again
+          soon! Thank you for your patience.
+        </p>
+        <p className="text-3xl lg:text-6xl leading-normal lg:leading-normal text-center italic">
+          The old version is still available for record keeping but it's use and
+          support is no longer provided.
+        </p>
+        <p className="text-3xl lg:text-6xl leading-normal lg:leading-normal text-center italic">
+          We hope to have the new version available within the week (ETA: by
+          2024/08/02) for you!
         </p>
       </div>
       <div className="flex flex-wrap items-start justify-center gap-4 mt-8">

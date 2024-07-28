@@ -15,15 +15,15 @@ export default function Home() {
           available for <span className="text-accent italic">beta</span>{" "}
           testing! */}
         </p>
-        <p className="textlg lg:text-6xl leading-normal lg:leading-normal text-center italic">
+        <p className="text-lg leading-normal lg:leading-normal text-center italic">
           Keyvault is currently being refactored and will be available again
           soon! Thank you for your patience.
         </p>
-        <p className="textlg lg:text-6xl leading-normal lg:leading-normal text-center italic">
+        <p className="text-lg leading-normal lg:leading-normal text-center italic">
           The old version is still available for record keeping but it&apos;s
           use and support is no longer provided.
         </p>
-        <p className="textlg lg:text-6xl leading-normal lg:leading-normal text-center italic">
+        <p className="text-lg leading-normal lg:leading-normal text-center italic">
           We hope to have the new version available within the week (ETA: by
           2024/08/02) for you!
         </p>

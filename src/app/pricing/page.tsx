@@ -9,9 +9,9 @@ export default function Pricing() {
           <Keyvault /> is completely free to use; we do not charge anything for
           storing or managing your credentials. However, because your encrypted
           credentials are stored on the <Keyvault /> smart contract, you will
-          incur blockchain "gas fees" for storage. These fees are determined
-          entirely by the blockchain network and are required to process
-          transactions.
+          incur gas fees for storage. These fees are determined entirely by the
+          blockchain network and are required to process transactions.{" "}
+          <Keyvault /> does not profit from the gas fees.
         </p>
         <p className="text-2xl leading-relaxed">
           Currently, <Keyvault /> operates on the
@@ -19,7 +19,7 @@ export default function Pricing() {
           where the cost of storing one encrypted credential is approximately
           <span className="font-semibold"> $0.01 USD</span> as of
           <span className="font-semibold"> February 2025</span>. Gas fees may
-          vary depending on network conditions and may differ if <Keyvault />
+          vary depending on network conditions and may differ if <Keyvault />{" "}
           expands to other blockchains in the future.
         </p>
       </main>

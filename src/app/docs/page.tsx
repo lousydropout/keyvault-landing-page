@@ -9,12 +9,17 @@ export default function Documentation() {
         <h2 className="text-4xl mt-8 text-accent">About Keyvault</h2>
         <p className="text-2xl leading-relaxed">
           <Keyvault /> is a
-          <span className="font-semibold"> not-for-profit</span>,
-          blockchain-based password manager** that prioritizes security,
-          decentralization, and user control. Unlike traditional password
-          managers that rely on centralized servers, <Keyvault />{" "}
-          <span className="font-semibold"> removes middlemen</span> by storing
-          encrypted credentials directly on the blockchain.
+          <span className="font-semibold">
+            {" "}
+            not-for-profit, blockchain-based password manager
+          </span>{" "}
+          that prioritizes security, decentralization, and user control. Unlike
+          traditional password managers that rely on centralized servers,{" "}
+          <Keyvault /> <span className="font-semibold">
+            {" "}
+            removes middlemen
+          </span>{" "}
+          by storing encrypted credentials directly on the blockchain.
         </p>
         <p className="text-2xl leading-relaxed">
           Currently, <Keyvault /> operates on the{" "}

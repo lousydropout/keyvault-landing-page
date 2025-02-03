@@ -1,216 +1,213 @@
-import { Beta } from "@/components/beta";
 import { Keyvault } from "@/components/keyvault";
 
 export default function Documentation() {
   return (
-    <main className="flex flex-col pt-12 pb-48 gap-8">
-      <h1 className="text-6xl mb-12 text-primary">Documentation</h1>
-      <p className="text-2xl leading-relaxed">
-        Thank you for checking out <Keyvault /> during its <Beta /> testing
-        period. We are currently refactoring the dApp and expect to have it
-        available again within the week (ETA: by 2024/08/02).
-      </p>
-      <p className="text-2xl leading-relaxed">Thank you for your patience!</p>
-      <p className="text-2xl leading-relaxed text-accent mt-8">
-        More details coming soon...
-      </p>
-    </main>
-  );
-
-  return (
     <>
       <main className="flex flex-col pt-12 pb-48 gap-8">
         <h1 className="text-6xl mb-12 text-primary">Documentation</h1>
-        <h2 className="text-4xl mt-8 text-accent">Table of Contents</h2>
-        <ol className="text-2xl list-decimal list-inside">
-          <li className="mt-2">
-            <a href="#getting-started" className="text-accent italic underline">
-              Getting started
-            </a>
-          </li>
-          <li className="mt-2">
-            <a
-              href="#background-information"
-              className="text-accent italic underline"
-            >
-              Background Information
-            </a>
-          </li>
-        </ol>
-        <hr className="my-4 border-slate-600" />
-        {/* Getting started */}
-        <h2 id="getting-started" className="text-4xl mt-4 mb-2 text-accent">
-          Getting started
+
+        <h2 className="text-4xl mt-8 text-accent">About Keyvault</h2>
+        <p className="text-2xl leading-relaxed">
+          <Keyvault /> is a
+          <span className="font-semibold"> not-for-profit</span>,
+          blockchain-based password manager** that prioritizes security,
+          decentralization, and user control. Unlike traditional password
+          managers that rely on centralized servers, <Keyvault />{" "}
+          <span className="font-semibold"> removes middlemen</span> by storing
+          encrypted credentials directly on the blockchain.
+        </p>
+        <p className="text-2xl leading-relaxed">
+          Currently, <Keyvault /> operates on the{" "}
+          <span className="font-semibold"> Astar EVM Mainnet</span>, but future
+          expansions to other blockchains are planned.
+        </p>
+
+        <h2 id="encryption" className="text-4xl mt-8 text-accent">
+          Security & Encryption
         </h2>
         <p className="text-2xl leading-relaxed">
-          Thank you for checking out <Keyvault /> during its <Beta /> testing
-          period. We&apos;d love to hear your experience and feedback.
-        </p>
-        <p className="text-2xl leading-relaxed">
-          The first step will be to install the keyvault Chrome extension. To do
-          this, you can either download the zip file from the keyvault Github
-          repo (see{" "}
-          <a
-            href="https://github.com/lousydropout/password-manager-extension"
-            target="_blank"
-          >
-            keyvault Chrome Extension
-          </a>
-          ) or clone the repo and build the Chrome extension files yourself.
-        </p>
-        <p className="text-2xl leading-relaxed">
-          <span className="italic">
-            Note: Although more cumbersome, building the Chrome extension
-            yourself allows you to go through the codebase and make sure the
-            Chrome extension you&apos;re about to install does not contain any
-            malicious code (in case our GitHub account gets hacked for
-            instance).
+          <Keyvault /> encrypts all credentials using{" "}
+          <span className="font-semibold"> 256-bit AES-GCM</span>, a highly
+          secure, quantum-resistant encryption standard. Importantly,
+          <span className="font-semibold">
+            {" "}
+            you alone hold your encryption key
           </span>
-        </p>
-        <h3 className="text-3xl mt-8 mb-2 underline">
-          Installing using the prepared zip file
-        </h3>
-        <ol className="list-decimal">
-          <li className="text-2xl leading-relaxed">
-            First, please download the <Keyvault /> <Beta /> release zip file
-            found on the Github repo&apos;s release page:{" "}
-            <a
-              className="text-accent underline"
-              href="https://github.com/lousydropout/password-manager-extension/releases/tag/beta-1"
-              target="_blank"
-            >
-              keyvault Chrome extention release page
-            </a>
-            .
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Next, unzip the file into a location of your choice.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Open Chrome and navigate to the extensions page by typing
-            `chrome://extensions/` in the address bar.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Enable developer mode by clicking the toggle switch in the top right
-            corner.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Click the `Load unpacked` button and navigate to the unzipped
-            folder.
-          </li>
-        </ol>
-        <h3 className="text-3xl mt-8 mb-2 underline">
-          Cloning and building the Chrome extension yourself
-        </h3>
-        <ol>
-          <li className="text-2xl leading-relaxed">
-            Clone or download{" "}
-            <a
-              className="text-accent underline italic"
-              href="https://github.com/lousydropout/password-manager-extension"
-            >
-              Keyvault chrome extension repo
-            </a>
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Open the terminal and navigate to the root folder of the cloned repo
-            and run `pnpm install`.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Run `pnpm build` to build the extension files.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Open Chrome and navigate to the extensions page by typing
-            `chrome://extensions/` in the address bar.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Enable developer mode by clicking the toggle switch in the top right
-            corner.
-          </li>
-          <li className="text-2xl leading-relaxed">
-            Click the `Load unpacked` button and navigate to the `dist` folder
-            (this was created via `pnpm run build`) in the root directory of the
-            cloned repo.
-          </li>
-        </ol>
-        <hr className="my-4 border-slate-600" />
-        {/* Background information */}
-        <h2
-          id="background-information"
-          className="text-4xl mt-4 my-2 text-accent"
-        >
-          Background information
-        </h2>
-        <p className="text-2xl leading-relaxed">
-          To log into most sites on the internet, you either create a new
-          account with username and password or utilize social login.
-        </p>
-        <h3 className="text-3xl mt-8 mb-2 underline">
-          Memorizing passwords is hard
-        </h3>
-        <p className="text-2xl leading-relaxed">
-          In the former case, you rely on the site to keep your username and
-          password safe. Prior to password managers being mainstream, users
-          would end up resuing the same password across multiple sites to avoid
-          having to remember multiple passwords. With your typical password
-          managers, users no longer have to memorize multiple passwords, but are
-          now dependent on the password managers to keep their passwords safe
-          and provide continued access. In contrast, your continued access to
-          encrypted passwords on <Keyvault /> cannot prevented by us or anyone
-          else so long as <span className="text-primary">Astar network</span>
-          {" (the network we deployed the smart contract on) "}
-          remains operational.
-        </p>
-        <h3 className="text-3xl mt-8 mb-2 underline">
-          At the mercy of social login providers for continued access
-        </h3>
-        <p className="text-2xl leading-relaxed">
-          In the later case, you rely on the social login of choice (whether it
-          be Google, Facebook, Github, or any other) to provide continued access
-          and hope that they do not revoke your access one day because
-          they&apos;ve decided you&apos;ve somehow violated their terms and
-          conditions.
-        </p>
-        <h3 className="text-3xl mt-8 mb-2 underline">
-          What encryption scheme does keyvault use?
-        </h3>{" "}
-        <p className="text-2xl leading-relaxed">
-          <Keyvault /> is a blockchain-based password manager. Here, your
-          passwords are encrypted and decrypted off-chain, on the frontend,
-          using your encryption key. As the default encryption scheme is a
-          256-bit AES-GCM, your passwords are encrypted using a
-          quantum-resistant and military-grade encryption scheme (read
-          explanation below).
+          —
+          <Keyvault /> never has access to it. This ensures total security, but
+          also means that{" "}
+          <span className="font-semibold">
+            {" "}
+            if you lose your encryption key, you will lose access to your
+            credentials permanently
+          </span>
+          .
         </p>
         <p className="text-2xl leading-relaxed">
-          For a hacker to crack a 256-bit encryption, the hacker would have to
-          guess around `2^255` keys on average before succeeding. To get a sense
-          of how large a number `2^255` is, I recommend watching{" "}
+          256-bit AES-GCM is trusted by governments and security professionals
+          worldwide. Even with quantum computing advancements, brute-forcing a
+          256-bit encryption key remains infeasible.
+        </p>
+
+        <h2 className="text-4xl mt-8 text-accent">Getting Started</h2>
+        <p className="text-2xl leading-relaxed">
+          <Keyvault /> is currently accessible via the{" "}
+          <span className="font-semibold">
+            {" "}
+            Chrome and Brave desktop browsers
+          </span>
+          . Install the extension from the{" "}
           <a
-            className="text-accent underline"
-            href="https://www.youtube.com/watch?v=S9JGmA5_unY"
+            className="underline text-accent"
+            rel="nofollow"
+            target="_blank"
+            href="https://chromewebstore.google.com/detail/keyvault-password-manager/mgdcnfdccekpbegddnhalbibogjohfoo"
           >
-            3Blue1Brown&apos;s YouTube video
+            Chrome Web Store
           </a>
           .
         </p>
         <p className="text-2xl leading-relaxed">
-          For symmetric encryptions such as AES, the quantum algorithm to keep
-          in mind is Grover&apos;s algorithm. In the case of 256-bit AES,
-          Grover&apos;s algorithm effectively reduces the 256 bits of entropy to
-          128 bits, which is still such a ridiculously large number that the
-          U.S. military uses it for encrypting secret information (that fun
-          tidbit was taken from{" "}
+          The open-source code for <Keyvault /> can be found on{" "}
           <a
             className="underline text-accent"
-            href="https://nordpass.com/blog/military-grade-encryption-explained/"
+            rel="nofollow"
+            target="_blank"
+            href="https://github.com/lousydropout/keyvault"
           >
-            Military-grade encryption explained
+            Github
           </a>
-          ).
+          .
         </p>
-        <p className="text-2xl leading-relaxed text-accent mt-8">
-          More details coming soon...
+
+        <h2 className="text-4xl mt-8 text-accent">Key Features</h2>
+        <ul className="text-2xl list-disc list-inside">
+          <li>
+            Decentralized and blockchain-based, ensuring no reliance on third
+            parties.
+          </li>
+          <li>Securely encrypt and store credentials using 256-bit AES-GCM.</li>
+          <li>
+            Access credentials anywhere, as long as the blockchain remains
+            operational.
+          </li>
+          <li>
+            Supports <span className="font-semibold"> message encryption</span>{" "}
+            using OpenPGP.js.
+          </li>
+          <li>
+            Allows exporting credentials in an encrypted JSON format for backup
+            purposes.
+          </li>
+        </ul>
+
+        <h3 className="text-3xl mt-8 mb-2 underline">
+          Encrypting Messages with <Keyvault />
+        </h3>
+        <p className="text-2xl leading-relaxed">
+          <Keyvault /> allows users to{" "}
+          <span className="font-semibold">
+            {" "}
+            encrypt and decrypt messages securely
+          </span>
+          . Users can generate and publish a{" "}
+          <span className="font-semibold"> public key</span> to the <Keyvault />{" "}
+          smart contract. If <span className="font-semibold"> User A</span>{" "}
+          wants to send a private message to{" "}
+          <span className="font-semibold"> User B</span>,
+          <Keyvault /> will encrypt the message in such a way that only{" "}
+          <span className="font-semibold"> User B</span> can decrypt it.
+        </p>
+
+        <h3 className="text-3xl mt-8 mb-2 underline">
+          Exporting & Importing Credentials
+        </h3>
+        <p className="text-2xl leading-relaxed">
+          <Keyvault /> allows users to export their credentials in an
+          <span className="font-semibold"> encrypted JSON file</span>. This
+          ensures that your credentials remain safe during transfer or backup.
+        </p>
+        <p className="text-2xl leading-relaxed">
+          To import your credentials back into <Keyvault />, simply upload the
+          encrypted JSON file, and decrypt it using your{" "}
+          <span className="font-semibold"> original encryption key</span>.
+        </p>
+
+        <h2 className="text-4xl mt-8 text-accent">Video Guides</h2>
+        <p className="text-2xl leading-relaxed">
+          Watch these screencasts to see <Keyvault /> in action:
+        </p>
+        <ol className="text-2xl list-inside">
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/wciwR8Zwf6Q?feature=share"
+            >
+              1. Initializing the <Keyvault /> extension
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/aMRcr7iVhhc?feature=share"
+            >
+              2. Adding a new credential
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/ps53kBl4ph0?feature=share"
+            >
+              3. Syncing your credentials to the smart contract
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/KAmS5s0noT8?feature=share"
+            >
+              4. Importing encryption key
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/PNsj-duYgJk?feature=share"
+            >
+              5. Generating and publishing an encryption keypair
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/bpCeuNbTv9U?feature=share"
+            >
+              6. Encrypting a message that only your friend can read
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/vecmiKWDPH4?feature=share"
+            >
+              7. Decrypting a message
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-accent underline"
+              href="https://youtube.com/shorts/new_video_link"
+            >
+              8. Exporting and importing credentials
+            </a>
+          </li>
+        </ol>
+
+        <h2 className="text-4xl mt-8 text-accent">Future Plans</h2>
+        <p className="text-2xl leading-relaxed">
+          More features are in development, including support for additional
+          blockchains, expanded browser compatibility, and mobile app support.
         </p>
       </main>
     </>

@@ -19,7 +19,7 @@ export default function HomeLayout({
   return (
     <html lang="en" className="bg-dark-blue">
       <body
-        className={`${inter.className} text-white min-h-screen w-1/2 mx-auto relative`}
+        className={`${inter.className} text-white min-h-screen w-5/6 sm:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto relative`}
       >
         <Header />
         {children}

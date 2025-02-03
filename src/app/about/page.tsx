@@ -10,14 +10,41 @@ export default function About() {
         <h2 className="text-4xl mt-8 mb-4">About the project</h2>
 
         <p className="text-2xl leading-relaxed">
-          <Keyvault /> is a blockchain-based password manager (for more details,
-          see{" "}
+          <Keyvault /> is a{" "}
+          <span className="font-semibold"> not-for-profit</span>,
+          blockchain-based password manager designed to offer true ownership and
+          security over your credentials. Unlike traditional password managers
+          that rely on centralized servers or third-party identity providers,{" "}
+          <Keyvault /> <span className="font-semibold"> removes middlemen</span>{" "}
+          by leveraging blockchain technology. Your encrypted credentials are
+          stored directly on the blockchain, ensuring that no single
+          entity—whether a company, website administrator, or social login
+          provider—has control over your data.
+        </p>
+
+        <p className="text-2xl leading-relaxed">
+          <Keyvault /> was proudly developed as part of{" "}
+          <span className="font-semibold">
+            {" "}
+            Astar&apos;s Unstoppable Community Grant program
+          </span>{" "}
+          and is currently deployed on the{" "}
+          <span className="font-semibold"> Astar EVM Mainnet</span>. Our goal is
+          to provide a{" "}
+          <span className="font-semibold">
+            {" "}
+            decentralized and censorship-resistant
+          </span>{" "}
+          password management solution where users have full control, free from
+          corporate oversight or reliance on a central authority.
+        </p>
+
+        <p className="text-2xl leading-relaxed">
+          For more details, check out our{" "}
           <Link href="/docs" className="text-accent italic underline">
             Documentation
           </Link>
-          ) and is motivated by the need for a secure and decentralized password
-          password manager not beholden to any single entity whether it be some
-          website administrator or some social login identity provider.
+          .
         </p>
 
         <p className="text-2xl leading-relaxed">
@@ -47,10 +74,6 @@ export default function About() {
           continued development of this project. Without her support, the
           journey to this point would have been much longer and more
           challenging.
-        </p>
-
-        <p className="text-2xl leading-relaxed text-accent mt-8 mb-48">
-          More details coming soon...
         </p>
 
         <h2 className="text-4xl mt-8 mb-4">About the team</h2>

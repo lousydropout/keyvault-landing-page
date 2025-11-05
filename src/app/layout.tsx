@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "keyvault",
   description: "Blockchain-based password manager",
+  themeColor: "#0A0C13",
+  colorScheme: "dark",
 };
 
 export default function HomeLayout({
@@ -17,13 +19,16 @@ export default function HomeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-dark-blue">
+    <html lang="en" className="dark bg-dark-blue gradient-mesh" style={{ colorScheme: 'dark' }} suppressHydrationWarning>
       <body
-        className={`${inter.className} text-white min-h-screen w-5/6 sm:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto relative`}
+        className={`${inter.className} bg-dark-blue text-white min-h-screen w-full`}
+        style={{ backgroundColor: '#0A0C13', color: 'white' }}
       >
-        <Header />
-        {children}
-        <Footer />
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

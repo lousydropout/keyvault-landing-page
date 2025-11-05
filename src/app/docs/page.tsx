@@ -3,11 +3,11 @@ import { Keyvault } from "@/components/keyvault";
 export default function Documentation() {
   return (
     <>
-      <main className="flex flex-col pt-12 pb-48 gap-8">
-        <h1 className="text-6xl mb-12 text-primary">Documentation</h1>
+      <main className="flex flex-col pt-12 pb-48 gap-8 max-w-4xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl mb-12 text-primary font-bold">Documentation</h1>
 
-        <h2 className="text-4xl mt-8 text-accent">About Keyvault</h2>
-        <p className="text-2xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">About Keyvault</h2>
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> is a
           <span className="font-semibold">
             {" "}
@@ -21,16 +21,16 @@ export default function Documentation() {
           </span>{" "}
           by storing encrypted credentials directly on the blockchain.
         </p>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Currently, <Keyvault /> operates on the{" "}
           <span className="font-semibold"> Astar EVM Mainnet</span>, but future
           expansions to other blockchains are planned.
         </p>
 
-        <h2 id="encryption" className="text-4xl mt-8 text-accent">
+        <h2 id="encryption" className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">
           Security & Encryption
         </h2>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> encrypts all credentials using{" "}
           <span className="font-semibold"> 256-bit AES-GCM</span>, a highly
           secure, quantum-resistant encryption standard. Importantly,
@@ -48,14 +48,14 @@ export default function Documentation() {
           </span>
           .
         </p>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           256-bit AES-GCM is trusted by governments and security professionals
           worldwide. Even with quantum computing advancements, brute-forcing a
           256-bit encryption key remains infeasible.
         </p>
 
-        <h2 className="text-4xl mt-8 text-accent">Getting Started</h2>
-        <p className="text-2xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">Getting Started</h2>
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> is currently accessible via the{" "}
           <span className="font-semibold">
             {" "}
@@ -63,7 +63,7 @@ export default function Documentation() {
           </span>
           . Install the extension from the{" "}
           <a
-            className="underline text-accent"
+            className="underline text-accent hover:text-primary transition-colors duration-200"
             rel="nofollow"
             target="_blank"
             href="https://chromewebstore.google.com/detail/keyvault-password-manager/mgdcnfdccekpbegddnhalbibogjohfoo"
@@ -72,10 +72,10 @@ export default function Documentation() {
           </a>
           .
         </p>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           The open-source code for <Keyvault /> can be found on{" "}
           <a
-            className="underline text-accent"
+            className="underline text-accent hover:text-primary transition-colors duration-200"
             rel="nofollow"
             target="_blank"
             href="https://github.com/lousydropout/keyvault"
@@ -85,8 +85,8 @@ export default function Documentation() {
           .
         </p>
 
-        <h2 className="text-4xl mt-8 text-accent">Key Features</h2>
-        <ul className="text-2xl list-disc list-inside">
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">Key Features</h2>
+        <ul className="text-base sm:text-lg list-disc list-inside space-y-2 text-gray-300 mb-6">
           <li>
             Decentralized and blockchain-based, ensuring no reliance on third
             parties.
@@ -106,10 +106,10 @@ export default function Documentation() {
           </li>
         </ul>
 
-        <h3 className="text-3xl mt-8 mb-2 underline">
+        <h3 className="text-2xl sm:text-3xl mt-8 mb-4 text-accent">
           Encrypting Messages with <Keyvault />
         </h3>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> allows users to{" "}
           <span className="font-semibold">
             {" "}
@@ -124,93 +124,109 @@ export default function Documentation() {
           <span className="font-semibold"> User B</span> can decrypt it.
         </p>
 
-        <h3 className="text-3xl mt-8 mb-2 underline">
+        <h3 className="text-2xl sm:text-3xl mt-8 mb-4 text-accent">
           Exporting & Importing Credentials
         </h3>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> allows users to export their credentials in an
           <span className="font-semibold"> encrypted JSON file</span>. This
           ensures that your credentials remain safe during transfer or backup.
         </p>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           To import your credentials back into <Keyvault />, simply upload the
           encrypted JSON file, and decrypt it using your{" "}
           <span className="font-semibold"> original encryption key</span>.
         </p>
 
-        <h2 className="text-4xl mt-8 text-accent">Video Guides</h2>
-        <p className="text-2xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">Video Guides</h2>
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-4">
           Watch these screencasts to see <Keyvault /> in action:
         </p>
-        <ol className="text-2xl list-inside">
+        <ol className="text-base sm:text-lg list-decimal list-inside space-y-2 text-gray-300 mb-6">
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/wciwR8Zwf6Q?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              1. Initializing the <Keyvault /> extension
+              Initializing the <Keyvault /> extension
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/aMRcr7iVhhc?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              2. Adding a new credential
+              Adding a new credential
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/ps53kBl4ph0?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              3. Syncing your credentials to the smart contract
+              Syncing your credentials to the smart contract
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/KAmS5s0noT8?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              4. Importing encryption key
+              Importing encryption key
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/PNsj-duYgJk?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              5. Generating and publishing an encryption keypair
+              Generating and publishing an encryption keypair
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/bpCeuNbTv9U?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              6. Encrypting a message that only your friend can read
+              Encrypting a message that only your friend can read
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/vecmiKWDPH4?feature=share"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              7. Decrypting a message
+              Decrypting a message
             </a>
           </li>
           <li>
             <a
-              className="text-accent underline"
+              className="text-accent hover:text-primary underline transition-colors duration-200"
               href="https://youtube.com/shorts/new_video_link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              8. Exporting and importing credentials
+              Exporting and importing credentials
             </a>
           </li>
         </ol>
 
-        <h2 className="text-4xl mt-8 text-accent">Future Plans</h2>
-        <p className="text-2xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">Future Plans</h2>
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           More features are in development, including support for additional
           blockchains, expanded browser compatibility, and mobile app support.
         </p>

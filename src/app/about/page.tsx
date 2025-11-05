@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <main className="flex flex-col pt-12 pb-48 gap-8">
-        <h1 className="text-6xl mb-12 text-primary">About</h1>
+      <main className="flex flex-col pt-12 pb-48 gap-8 max-w-4xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl mb-12 text-primary font-bold">About</h1>
 
-        <h2 className="text-4xl mt-8 mb-4">About the project</h2>
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">About the project</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> is a{" "}
           <span className="font-semibold"> not-for-profit</span>,
           blockchain-based password manager designed to offer true ownership and
@@ -22,7 +22,7 @@ export default function About() {
           provider—has control over your data.
         </p>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           <Keyvault /> was proudly developed as part of{" "}
           <span className="font-semibold">
             {" "}
@@ -39,25 +39,27 @@ export default function About() {
           corporate oversight or reliance on a central authority.
         </p>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           For more details, check out our{" "}
-          <Link href="/docs" className="text-accent italic underline">
+          <Link href="/docs" className="text-accent hover:text-primary underline transition-colors duration-200">
             Documentation
           </Link>
           .
         </p>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           An early version of this project was submitted to the Polkadot ink!
           Hackathon in Oct/Nov 2023.
         </p>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Tina Bregović has provided an insightful write-up of the event, which
           is available on Medium under the title{" "}
           <a
-            className="text-accent italic underline"
+            className="text-accent hover:text-primary underline transition-colors duration-200"
             href="https://www.blog.encode.club/polkadot-ink-hackathon-powered-by-encode-club-prizewinners-and-summary-0ee9efac42ea#a067"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Polkadot ink! Hackathon powered by Encode Club—Prizewinners and
             Summary
@@ -65,7 +67,7 @@ export default function About() {
           .
         </p>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Further, while the project did not place in the Astar Bounty track,
           which offered winners &ldquo;exclusive access to a mentor programme
           with Astar,&rdquo; I received invaluable encouragement from
@@ -76,15 +78,16 @@ export default function About() {
           challenging.
         </p>
 
-        <h2 className="text-4xl mt-8 mb-4">About the team</h2>
+        <h2 className="text-3xl sm:text-4xl mt-8 mb-4 text-accent">About the team</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Thus far, this project has been a solo endeavor by me, Vincent Chan,
           who often goes by the handle lousydropout. I am a cloud developer who
           has caught the blockchain bug, graduated{" "}
           <a
-            className="text-accent italic underline"
+            className="text-accent hover:text-primary underline transition-colors duration-200"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://kodadot.xyz/ahp/gallery/56-6"
           >
             Polkadot Blockchain Academy at Berkeley

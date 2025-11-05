@@ -1,22 +1,23 @@
 export default function Terms() {
   return (
     <>
-      <main className="flex flex-col pt-12 pb-48 gap-8">
-        <h1 className="text-6xl mb-12 text-primary">Terms and Conditions</h1>
-        <p>
-          <strong>Last Updated: 2024-02-18</strong>
-          <h2 className="mt-4"> Version History</h2>
-
-          <ul className="flex flex-col gap-2">
+      <main className="flex flex-col pt-12 pb-48 gap-8 max-w-4xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl mb-12 text-primary font-bold">Terms and Conditions</h1>
+        <div className="mb-8">
+          <p className="text-base sm:text-lg text-gray-300 mb-4">
+            <strong>Last Updated: 2024-02-18</strong>
+          </p>
+          <h2 className="text-2xl sm:text-3xl mb-4 text-accent">Version History</h2>
+          <ul className="flex flex-col gap-2 text-base sm:text-lg text-gray-300">
             <li>
               <strong>1.0 (Created on 2024-02-18):</strong> Initial release.
             </li>
           </ul>
-        </p>
+        </div>
 
-        <h2 className="text-4xl mb-4">Age Requirement and Parental Approval</h2>
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">Age Requirement and Parental Approval</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           You must be at least 13 years old to use Keyvault. If you are under
           18, you must have parental approval to create an account and use our
           services. By agreeing to these terms, you confirm that you meet these
@@ -24,30 +25,30 @@ export default function Terms() {
           necessary parental consent.
         </p>
 
-        <h2 className="text-4xl mb-4"> Encryption and Data Storage</h2>
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">Encryption and Data Storage</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Keyvault is meant for storing your data in an encrypted format. For
           security purposes, the encryption and decryption process must take
           place off-chain so that no unencrypted data is submitted to the
           blockchain.
         </p>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Under correct usage of Keyvault, Keyvault stores only encrypted
           information on the blockchain. You hold the only key capable of
           decrypting this information. We do not have access to your encryption
           key and, therefore, cannot decrypt your credentials or recover them if
           you lose your key.
         </p>
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Again, you&apos;re responsible for encrypting your data before storing
           it and managing your encryption keys securely. We cannot decrypt or
           access your data.
         </p>
 
-        <h2 className="text-4xl mb-4"> Privacy and Blockchain Transparency </h2>
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">Privacy and Blockchain Transparency</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Keyvault does not capture or store any personal information off-chain,
           even for analytics purposes. However, it&apos;s important to remember
           that this is a blockchain-based application. Consequently, actions
@@ -59,9 +60,9 @@ export default function Terms() {
           occurred is public.
         </p>
 
-        <h2 className="text-4xl mb-4"> Immutability of Stored Information </h2>
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">Immutability of Stored Information</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Due to the immutable nature of blockchain technology, once information
           is encrypted and stored on-chain, it cannot be altered or removed.
           This ensures the integrity and security of your data but also means
@@ -70,24 +71,24 @@ export default function Terms() {
           securely.
         </p>
 
-        <h2 className="text-4xl mb-4"> Limitation of Liability </h2>
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">Limitation of Liability</h2>
 
-        <p className="text-2xl leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           To the fullest extent permitted by law, we, along with our officers,
           directors, employees, agents, or affiliates, will not be liable for
           any indirect, incidental, special, consequential, or punitive damages
           arising out of or in connection with your use of Keyvault...
         </p>
 
-        <h2 className="text-4xl mb-4"> No Warranty </h2>
-        <p className="text-2xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">No Warranty</h2>
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           Due to the public and immutable nature of blockchains, encryption and
           decryption must occur off-chain. As this is impossible for us to
           enforce, we are unable to provide any warranty...
         </p>
 
-        <h2 className="text-4xl mb-4"> Your Agreement </h2>
-        <p className="text-2xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl mb-4 text-accent">Your Agreement</h2>
+        <p className="text-base sm:text-lg leading-relaxed text-gray-300 mb-6">
           By using Keyvault, you agree to these terms and conditions. Your use
           of our service signifies your acceptance of these terms and your
           commitment to comply with them. If you do not agree with any part of
